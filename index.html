@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<header>
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/curiologo2.webp">
+      </div>
+      <div class="linkjes">
+        <a href="">VMBO</a>
+        <a href="">MBO</a>
+        <a href="">CURSUS</a>
+        <a href="">Vavo</a>
+        <a href="">INLOGGEN</a>
+
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+ 
+  <div class="intro">
+
+    <img src="img/curiointro.jpg" style="width: 100%;">
+    <h1 class="top-right">Welke uitdaging ga jij aan?</h1>
+    <p class="top-middle">Welkom bij Curio, de beroepsopleider van de regio.</p>    
+  </div>
+  
+  <div class="vakken">
+    <div class="vak">
+      <h1 class="vakuitlegtitel">Praktijkondersteuning</h1>
+      <p class="vakuitleg">Bij praktijkondersteuning krijgen we alles te leren over software developen, behalve daadwerkelijk developen</p>
+    </div>
+    <div class="vak">
+      <h1 class="vakuitlegtitel">Praktijkwerk</h1>
+      <p class="vakuitleg">Bij praktijkwerk krijg je grote problemen, die je als groep moet gaan oplossen.</p>
+    </div>
+    <div class="vak">
+      <h1 class="vakuitlegtitel">Studieloopbaan begeleiding</h1>
+      <p class="vakuitleg">Dit vak is een soort mentoruur op de middelbare school. Hier krijg je een moment met je mentor waarin je alles kan bespreken wat je wilt</p>
+    </div>
+    <div class="vak">
+      <h1 class="vakuitlegtitel">Web</h1>
+      <p class="vakuitleg">Bij Web ga je leren websites ontwikkelen. Je leert hierbij alles wat er te leren valt bij een website maken. Hier komen onder andere de talen: HTML, CSS, PHP en JavaScript. </p>
+    </div>
+    <div class="vak">
+      <h1 class="vakuitlegtitel">Native</h1>
+      <p class="vakuitleg">Bij Native ga je leren programma's maken. Denk hierbij bijvoorbeeld aan een kassasysteem of een klachtenbeheertool. Hier komen onder andere de talen PYTHON en C# in voor. </p>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("vak");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+  </script>
+  <div class="rooster">
+    <img src="img/rooster2.PNG">
+  </div>
+  <div class="roosteruitleg">
+    <div class="blok2">
+      <h1>Op de afbeelding hierboven, ziet u het rooster van een 1e jaar klas. Je kunt hier de vakken op terugzien die eerder uitgelegd zijn.</h1>
+    </div>
+
+    
+    <div class="wrapper">
+
+
+
+      <div class="grid">
+        
+        
+        <div class="blok">
+          <h1>De opleiding Software deverloper is opgedeeld in blokken. Elk jaar kent 2 blokken. Je begint in blok A en eindigt het jaar met blok B</h1>
+        </div>
+        <div class="blok">
+          <h1>Op de opleiding Software developer krijg je ook de optie om te versnellen. Dit betekent dat je de opleiding in plaats van 4 jaar, in 3 jaar kan afronden.</h1>
+        </div>
+        <div class="blok">
+          <h1>Om in de versnellingsklas te komen moet je aan een aantal voorwaarden voldoen. Je moet bijvoorbeeld al je opdrachten voldoende afronden. Ook moet je voldoende inzet tonen tijdens de les. </h1>
+        </div>
+        <div class="blok">
+          <h1>Op basis van je prestaties krijg je een kleur (Groen, Geel, Rood) en als dit groen is kom je in aanmerking voor versnelling. Met de kleur geel mag je gewoon door naar het volgende blok, maar als je rood krijgt dan bestaat er een kans dat je het blok opnieuw moet doen.  </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="smoelenboek">
+    <div class="wrapper">
+      <div class="grid2">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/eb89.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Elton Boekhoudt</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/steven2.PNG" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/wicher.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/corne.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/br10.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/michel.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
