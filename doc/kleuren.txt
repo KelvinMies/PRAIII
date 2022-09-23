@@ -1,0 +1,12 @@
+donkerblauw: #03357C
+
+rozig: #F8AECD
+
+lichtblauw: #60B9D7
+
+lichtgroen: #C1ED0C
+
+paars: #69197C
+
+
+SMOELENBOEK CHEAT: https://www.w3schools.com/howto/howto_css_flip_card.asp
