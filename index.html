@@ -52,103 +52,105 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
- 
-  <div class="intro">
+  <div class="megadiv">
+    <div class="intro">
 
-    <img src="img/curiointro.jpg" style="width: 100%;">
-    <h1 class="top-right">Welke uitdaging ga jij aan?</h1>
-    <p class="top-middle">Welkom bij Curio, de beroepsopleider van de regio.</p>    
-  </div>
-  
-  <div class="vakken">
-    <div class="vak">
-      <h1 class="vakuitlegtitel">Praktijkondersteuning</h1>
-      <p class="vakuitleg">Bij praktijkondersteuning krijgen we alles te leren over software developen, behalve daadwerkelijk developen</p>
+      <img src="img/curiointro.jpg" style="width: 100%;">
+      <h1 class="top-right">Welke uitdaging ga jij aan?</h1>
+      <p class="top-middle">Welkom bij Curio, de beroepsopleider van de regio.</p>    
     </div>
-    <div class="vak">
-      <h1 class="vakuitlegtitel">Praktijkwerk</h1>
-      <p class="vakuitleg">Bij praktijkwerk krijg je grote problemen, die je als groep moet gaan oplossen.</p>
+    
+    <div class="vakken">
+      <div class="vak">
+        <h1 class="vakuitlegtitel">Praktijkondersteuning</h1>
+        <p class="vakuitleg">Bij praktijkondersteuning krijgen we alles te leren over software developen, behalve daadwerkelijk developen</p>
+      </div>
+      <div class="vak">
+        <h1 class="vakuitlegtitel">Praktijkwerk</h1>
+        <p class="vakuitleg">Bij praktijkwerk krijg je grote problemen, die je als groep moet gaan oplossen.</p>
+      </div>
+      <div class="vak">
+        <h1 class="vakuitlegtitel">Studieloopbaan begeleiding</h1>
+        <p class="vakuitleg">Dit vak is een soort mentoruur op de middelbare school. Hier krijg je een moment met je mentor waarin je alles kan bespreken wat je wilt</p>
+      </div>
+      <div class="vak">
+        <h1 class="vakuitlegtitel">Web</h1>
+        <p class="vakuitleg">Bij Web ga je leren websites ontwikkelen. Je leert hierbij alles wat er te leren valt bij een website maken. Hier komen onder andere de talen: HTML, CSS, PHP en JavaScript. </p>
+      </div>
+      <div class="vak">
+        <h1 class="vakuitlegtitel">Native</h1>
+        <p class="vakuitleg">Bij Native ga je leren programma's maken. Denk hierbij bijvoorbeeld aan een kassasysteem of een klachtenbeheertool. Hier komen onder andere de talen PYTHON en C# in voor. </p>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="vak">
-      <h1 class="vakuitlegtitel">Studieloopbaan begeleiding</h1>
-      <p class="vakuitleg">Dit vak is een soort mentoruur op de middelbare school. Hier krijg je een moment met je mentor waarin je alles kan bespreken wat je wilt</p>
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-    <div class="vak">
-      <h1 class="vakuitlegtitel">Web</h1>
-      <p class="vakuitleg">Bij Web ga je leren websites ontwikkelen. Je leert hierbij alles wat er te leren valt bij een website maken. Hier komen onder andere de talen: HTML, CSS, PHP en JavaScript. </p>
-    </div>
-    <div class="vak">
-      <h1 class="vakuitlegtitel">Native</h1>
-      <p class="vakuitleg">Bij Native ga je leren programma's maken. Denk hierbij bijvoorbeeld aan een kassasysteem of een klachtenbeheertool. Hier komen onder andere de talen PYTHON en C# in voor. </p>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
 
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("vak");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    }
-  </script>
 
-  <div class="rooster">
-    <img id="image" src="">
-  </div>
-  <div class="button">
-    <button class="learn-more" type="button" onclick="show()" id="btnID">
-      Show Image
-    </button>
-  </div> 
-      <script>
-          function show() {
-   
-              /* Access image by id and change
-              the display property to block*/
-              document.getElementById('image')
-                      .style.display = "block";
-              
-              image.src = "img/rooster2.PNG"
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("vak");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      }
+    </script>
 
-              document.getElementById('btnID')
-                      .style.display = "none";
-          }
-      </script>
+    <div class="rooster">
+      <img id="image" src="">
+    </div>
+    <div class="button">
+      <button class="learn-more" type="button" onclick="show()" id="btnID">
+        Show Image
+      </button>
+    </div> 
+        <script>
+            function show() {
+    
+                /* Access image by id and change
+                the display property to block*/
+                document.getElementById('image')
+                        .style.display = "block";
+                
+                image.src = "img/rooster2.PNG"
+
+                document.getElementById('btnID')
+                        .style.display = "none";
+            }
+        </script>
 
 
-  <div class="roosteruitleg">
+    
     <div class="blok2">
       <h1>Op de afbeelding hierboven, ziet u het rooster van een 1e jaar klas. Je kunt hier de vakken op terugzien die eerder uitgelegd zijn.</h1>
     </div>
+  </div>
+  <div class="roosteruitleg">  
     <div class="wrapper">
       <div class="grid">       
         <div class="blok">
