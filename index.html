@@ -120,22 +120,37 @@
     dots[slideIndex-1].className += " active";
     }
   </script>
+
   <div class="rooster">
-    <img src="img/rooster2.PNG">
+    <img id="image" src="">
   </div>
+  <div class="button">
+    <button class="learn-more" type="button" onclick="show()" id="btnID">
+      Show Image
+    </button>
+  </div> 
+      <script>
+          function show() {
+   
+              /* Access image by id and change
+              the display property to block*/
+              document.getElementById('image')
+                      .style.display = "block";
+              
+              image.src = "img/rooster2.PNG"
+
+              document.getElementById('btnID')
+                      .style.display = "none";
+          }
+      </script>
+
+
   <div class="roosteruitleg">
     <div class="blok2">
       <h1>Op de afbeelding hierboven, ziet u het rooster van een 1e jaar klas. Je kunt hier de vakken op terugzien die eerder uitgelegd zijn.</h1>
     </div>
-
-    
     <div class="wrapper">
-
-
-
-      <div class="grid">
-        
-        
+      <div class="grid">       
         <div class="blok">
           <h1>De opleiding Software deverloper is opgedeeld in blokken. Elk jaar kent 2 blokken. Je begint in blok A en eindigt het jaar met blok B</h1>
         </div>
@@ -161,8 +176,7 @@
             </div>
             <div class="flip-card-back">
               <h1>Elton Boekhoudt</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <p>Docent WEB</p>            
             </div>
           </div>
         </div>
@@ -172,9 +186,8 @@
               <img src="img/steven2.PNG" alt="Avatar" style="width:300px;height:300px;">
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Steven van Rosendaal</h1>
+              <p>Docent NATIVE/SLB</p>
             </div>
           </div>
         </div>
@@ -184,9 +197,8 @@
               <img src="img/wicher.png" alt="Avatar" style="width:300px;height:300px;">
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Wicher Hulzebosch</h1>
+              <p>DOCENT PRA</p>
             </div>
           </div>
         </div>
@@ -196,9 +208,8 @@
               <img src="img/corne.png" alt="Avatar" style="width:300px;height:300px;">
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Corne Wagtmans</h1>
+              <p>DOCENT WEB</p>              
             </div>
           </div>
         </div>
@@ -208,9 +219,8 @@
               <img src="img/br10.png" alt="Avatar" style="width:300px;height:300px;">
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Bart Roos</h1>
+              <p>Docent WIN/SLB</p>
             </div>
           </div>
         </div>
@@ -220,9 +230,8 @@
               <img src="img/michel.png" alt="Avatar" style="width:300px;height:300px;">
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Michel</h1>
+              <p>Instructeur?</p>           
             </div>
           </div>
         </div>

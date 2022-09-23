@@ -133,6 +133,11 @@ textarea {
   position: relative;
   text-align: center;
   color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.intro p{
+
 }
 
 .top-right{
@@ -141,15 +146,17 @@ textarea {
   right: 16px;
   margin-right: 50px;
   margin-top: 180px;
-  font-size: 60px;
+  font-size: 80px;
 }
 .top-middle{
   position: absolute;
-  top: 160px;
+  top: 173px;
   right: 16px;
   margin-right: 50px;
   margin-top: 180px;
-  font-size: 25px;
+  font-size: 38px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 /*=============================CARROUSEL=========================*/
@@ -208,6 +215,36 @@ textarea {
   background-color: #717171;
 }
 /*=============================ROOSTER=========================*/
+
+
+
+.button button{
+
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+  padding: 0 32px;
+  border-radius: 6px;
+  color: #fff;
+  height: 48px;
+  font-size: 18px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  :hover{
+      box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+      transform: translateY(-2px);
+  }
+  :active{
+      box-shadow: inset 0px 3px 7px #3c4fe0;
+      transform: translateY(2px);
+  }
+                
+}
+
 .rooster img{
   max-width: 100%;
 }
@@ -218,11 +255,13 @@ textarea {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 50px;
+  padding-bottom: 15px;
 }
 .blok h1{
   color: #69197C;
   font-size: 25px;
   margin-top: 50px;
+  line-height: 25px;
 
 }
 .blok2{
@@ -240,11 +279,16 @@ textarea {
   max-width: 1000px;
 }
 /*=============================SMOELENBOEK=========================*/
+.smoelenboek{
+  background-image: linear-gradient(#68BDD9, #03357C);
+  padding-bottom: 50px;
+}
+
 .grid2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin-bottom: 50px;
+  
 }
 
 .flip-card {
@@ -284,9 +328,19 @@ textarea {
 .flip-card-back {
   background-color: #60B9D7;
   height: 100%;
-
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.flip-card-back h1{
+  font-size: 37px;
+}
+.flip-card-back p{
+  font-size: 29px;
 }
 
 
