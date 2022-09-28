@@ -205,6 +205,7 @@ textarea {
 .dot-container {
   text-align: center;
   padding: 20px;
+  
   /* background: #60B9D7; */
 }
 .dot {
@@ -297,11 +298,21 @@ button.learn-more:active::before{
 }
 
 .rooster img{
-  max-width: 100%;
+  width: 100%;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+
 }
 .roosteruitleg{
   background-color: #C1ED0C;
-  border-bottom: 5px solid black;
+  border-bottom: 4px solid black;
+}
+.titelversneluitleg h1{
+  background-color: #C1ED0C;
+  margin: 0;
+  text-align: center;
+  color: #69197C;
+  font-size: 35px;
 }
 .grid{
   display: grid;
@@ -313,7 +324,7 @@ button.learn-more:active::before{
   color: #69197C;
   font-size: 25px;
   margin-top: 50px;
-  line-height: 25px;
+  line-height: 28px;
 
 }
 .blok2{
@@ -323,6 +334,8 @@ button.learn-more:active::before{
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  text-align: center;
+
 
   border-bottom: solid 5px black;
 }
@@ -345,9 +358,9 @@ button.learn-more:active::before{
 .flip-card {
   margin-top: 30px;
   background-color: transparent;
-  width: 300px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
+  width: 312px;
+  height: 310px;
+  border: 6px solid black;
   perspective: 1000px; 
 }
 
